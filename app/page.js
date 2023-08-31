@@ -1,113 +1,118 @@
+'use client';
 import Image from 'next/image'
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
+import  deved from "../public/dev-ed-wave.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
+import design from "../public/design.png";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
+import { useState } from 'react';
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false)
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div className={darkMode ?  "dark" : ""}>
+      <main className=' md:p-4 lg:p-0 dark:bg-gray-800'>
+        <section className='min-h-screen lg:min-w-full w-auto'>
+          <nav className='flex justify-between mb-5 p-6 dark:bg-white'>
+            <h1 className='text-2xl font-burtons '>STAN<span className='text-yellow-500'>DARD</span></h1>
+            <ul className='flex items-center'>
+              <li> <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-xl'/></li>
+              <li>
+                <a className='ml-8 bg-transparent border-yellow-500 border-solid border-2 py-1 px-3 rounded-full' href="#">Resume</a>
+              </li>
+            </ul>
+          </nav>
+          <div className='text-center py-5 px-10'>
+            <h3 className='text-3xl text-yellow-500 font-medium py-2 md:text-5xl md:font-bold'>Oparinde Toluwalope</h3>
+            <h1 className='text-xl py-2 dark:text-white '>Web Developer, Full stack.</h1>
+            <p className='text-md py-5 leading-8 text-gray-600 max-w-md md:text-xl m-auto dark:text-gray-300'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel atque quasi quidem laborum eum totam, similique consequuntur natus nostrum quaerat facere, tenetur non, accusantium ex.</p>
+          </div>
+          <div className='flex justify-center text-3xl gap-5 text-gray-600 md:text-4xl dark:text-gray-300'>
+            <AiFillTwitterCircle />
+            <AiFillLinkedin />
+            <AiFillInstagram />
+          </div>
+          <div className='relative bg-gradient-to-b from-yellow-500 w-40 h-40 mx-auto mt-10 rounded-full overflow-hidden md:w-90 md:h-90'>
+            <Image src={deved} layout='fill' objectFit='cover'/>
+          </div>
+        </section>
+        
+        {/* Services section */}
+        <section className='mt-10'>
+          <div className='text-center dark:text-gray-300'>
+            <h2 className='text-3xl py-1 font-medium dark:text-white'>Services I offer.</h2>
+            <p classname='text-md text-gray-600 py-5 leading-8 md:text-xl m-auto'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi provident perferendis ullam consectetur consequatur explicabo.</p>
+            <p classname='text-md text-gray-600 py-5 leading-8 md:text-xl m-auto'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div className=' m-10 lg:flex gap-10 '>
+          <div className='text-center shadow-lg p-10 border-solid border-yellow-500 border-2 rounded-xl my-10 dark:border-4'>
+              <Image className='m-auto' src={design} width={60} height={60} />
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Consulting</h3>
+              <p className='dark:text-gray-300'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione in?</p>
+              <h4 className='py-4 text-yellow-500'>Design Tools I Use</h4>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Photoshop</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Illustrator</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Figma</p>
+            </div>
+            <div className='text-center shadow-lg p-10 border-solid border-yellow-500 border-2 rounded-xl my-10 dark:border-4'>
+              <Image className='m-auto' src={code} width={60} height={60} />
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Consulting</h3>
+              <p className='dark:text-gray-300'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione in?</p>
+              <h4 className='py-4 text-yellow-500'>Design Tools I Use</h4>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Photoshop</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Illustrator</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Figma</p>
+            </div>
+            <div className='text-center shadow-lg p-10 border-solid border-yellow-500 border-2 rounded-xl my-10 dark:border-4'>
+              <Image className='m-auto' src={consulting} width={60} height={60} />
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Consulting</h3>
+              <p className='dark:text-gray-300'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione in?</p>
+              <h4 className='py-4 text-yellow-500'>Design Tools I Use</h4>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Photoshop</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Illustrator</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Figma</p>
+            </div>
+          </div>
+        </section>
+        <section className='mt-10'>
+          <div className='md:max-w-lg md:text-2xl md:m-auto md:text-center dark:text-gray-300'>
+            <h2 className='text-3xl py-1 font-medium dark:text-white'>Services I offer.</h2>
+            <p classname='text-md text-gray-600 max-w-sm py-5 leading-8 dark:text-gray-300'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi provident perferendis ullam consectetur consequatur explicabo.</p>
+            <br/>
+            <p classname='text-md text-gray-600 max-w-sm py-5 leading-8 dark:text-gray-300'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <br/>
+          <hr/>
+          <br/>
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web1} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web2} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web3} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web4} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web5} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={web6} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   )
 }
