@@ -32,7 +32,7 @@ export default function Home() {
           <div className='text-center py-5 px-10'>
             <h3 className='text-3xl text-yellow-500 font-medium py-2 md:text-5xl md:font-bold'>Oparinde Toluwalope</h3>
             <h1 className='text-xl py-2 dark:text-white '>Web Developer, Full stack.</h1>
-            <p className='text-md py-5 leading-8 text-gray-600 max-w-md md:text-xl m-auto dark:text-gray-300'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel atque quasi quidem laborum eum totam, similique consequuntur natus nostrum quaerat facere, tenetur non, accusantium ex.</p>
+            <p className='text-md py-5 leading-8 text-gray-600 max-w-md md:text-xl m-auto dark:text-gray-300'>Hello, I am expert  in Reactjs, HTML and CSS, postgresql, and Ruby on Rails. Motivated with 3 years experience in Web development, dedicated and hard working with internal drive to deliver.</p>
           </div>
           <div className='flex justify-center text-3xl gap-5 text-gray-600 md:text-4xl dark:text-gray-300'>
             <AiFillTwitterCircle />
@@ -48,14 +48,14 @@ export default function Home() {
         <section className='mt-10'>
           <div className='text-center dark:text-gray-300'>
             <h2 className='text-3xl py-1 font-medium dark:text-white'>Services I offer.</h2>
-            <p classname='text-md text-gray-600 py-5 leading-8 md:text-xl m-auto'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi provident perferendis ullam consectetur consequatur explicabo.</p>
-            <p classname='text-md text-gray-600 py-5 leading-8 md:text-xl m-auto'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p classname='text-md text-gray-600 py-5 leading-8 md:text-xl m-auto'>I build web application that is cross platformed, responsive and engaging. </p>
+            <p classname='text-md text-gray-600 py-5 leading-8 md:text-xl m-auto'>I collaborate and assist senior web developers as well as backend Developers to ensure syncronization and smooth operation of websites</p>
           </div>
           <div className=' m-10 lg:flex gap-10 '>
-          <div className='text-center shadow-lg p-10 border-solid border-yellow-500 border-2 rounded-xl my-10 dark:border-4'>
+            <div className='text-center shadow-lg p-10 border-solid border-yellow-500 border-2 rounded-xl my-10 dark:border-4'>
               <Image className='m-auto' src={design} width={60} height={60} />
-              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Consulting</h3>
-              <p className='dark:text-gray-300'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione in?</p>
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Design</h3>
+              <p className='dark:text-gray-300'>Work closely with designers to implement visual and interactive elements.</p>
               <h4 className='py-4 text-yellow-500'>Design Tools I Use</h4>
               <p className='text-gray-600 py-1 dark:text-gray-300'>Photoshop</p>
               <p className='text-gray-600 py-1 dark:text-gray-300'>Illustrator</p>
@@ -63,30 +63,28 @@ export default function Home() {
             </div>
             <div className='text-center shadow-lg p-10 border-solid border-yellow-500 border-2 rounded-xl my-10 dark:border-4'>
               <Image className='m-auto' src={code} width={60} height={60} />
-              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Consulting</h3>
-              <p className='dark:text-gray-300'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione in?</p>
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Front-end Development</h3>
+              <p className='dark:text-gray-300'>Writing clear and maintainable codes to build component and interactivity in websites.</p>
               <h4 className='py-4 text-yellow-500'>Design Tools I Use</h4>
-              <p className='text-gray-600 py-1 dark:text-gray-300'>Photoshop</p>
-              <p className='text-gray-600 py-1 dark:text-gray-300'>Illustrator</p>
-              <p className='text-gray-600 py-1 dark:text-gray-300'>Figma</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>HTML & Css</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Javascript</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>React</p>
             </div>
             <div className='text-center shadow-lg p-10 border-solid border-yellow-500 border-2 rounded-xl my-10 dark:border-4'>
               <Image className='m-auto' src={consulting} width={60} height={60} />
-              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Consulting</h3>
-              <p className='dark:text-gray-300'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione in?</p>
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Full-stack development</h3>
+              <p className='dark:text-gray-300'>Integrating both frontend annd backend together to create a fully functional website</p>
               <h4 className='py-4 text-yellow-500'>Design Tools I Use</h4>
-              <p className='text-gray-600 py-1 dark:text-gray-300'>Photoshop</p>
-              <p className='text-gray-600 py-1 dark:text-gray-300'>Illustrator</p>
-              <p className='text-gray-600 py-1 dark:text-gray-300'>Figma</p>
+              <p className='text-gray-600 py-1 dark:text-gray-300'>Ruby on Rails</p>
             </div>
           </div>
         </section>
         <section className='mt-10'>
           <div className='md:max-w-lg md:text-2xl md:m-auto md:text-center dark:text-gray-300'>
             <h2 className='text-3xl py-1 font-medium dark:text-white'>Services I offer.</h2>
-            <p classname='text-md text-gray-600 max-w-sm py-5 leading-8 dark:text-gray-300'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi provident perferendis ullam consectetur consequatur explicabo.</p>
+            <p classname='text-md text-gray-600 max-w-sm py-5 leading-8 dark:text-gray-300'>While still updating this space, here are some of the projects I am working on</p>
             <br/>
-            <p classname='text-md text-gray-600 max-w-sm py-5 leading-8 dark:text-gray-300'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p classname='text-md text-gray-600 max-w-sm py-5 leading-8 dark:text-gray-300'></p>
           </div>
           <br/>
           <hr/>
@@ -99,16 +97,13 @@ export default function Home() {
               <Image src={web2} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image src={web3} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
+              <Image src={web2} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={web4} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={web5} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web6} className='rounded-lg object-cover' width={"100%"} height={"100%"} layout='responsive'/>
             </div>
           </div>
         </section>
